@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body {
+    min-height: 100vh;
+    background-color: #dddffa;
+    display: grid;
+    place-items: center;
+    
+}
+#modo{
+    background-color: #15173c;;
+    color:  #e6394a;
+    border: 0;
+    padding: 1rem .5rem;
+    height: 3.5rem;
+    width: 5rem;
+    font-weight: 1000;
+    letter-spacing: .14rem;
+
+    
+    border-radius: .5rem;
+    cursor: pointer;
+}
+#musica{
+    background-color: #15173c;;
+    color:  #e6394a;
+    border: 0;
+    padding: 1rem .5rem;
+    height: 3.5rem;
+    width: 5rem;
+    font-weight: 1000;
+    letter-spacing: .14rem;
+
+    
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.calculadora {
+    width: 20rem;
+    height: 32rem;
+    background-color: #02020A;
+    color: white;
+    
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+    
+}
+@keyframes multiColorBackground{
+    0%{ background-color: #e6394a; }
+    10%{background-color: chartreuse; }
+    20%{background-color: blue;}
+    30%{background-color: darkgoldenrod;}
+    40%{background-color:yellow;}
+    50%{background-color:turquoise}
+    60%{background-color:seagreen}
+    70%{background-color: salmon;}
+    80%{background-color: red;}
+    90%{background-color: orangered;}
+    100%{background-color: black;}
+}
+@keyframes multiColor{
+    0%{color: #e6394a; }
+    10%{color: chartreuse; }
+    20%{color: blue;}
+    30%{color: darkgoldenrod;}
+    40%{color:yellow}
+    50%{color:turquoise}
+    60%{color:seagreen}
+    70%{color: salmon;}
+    80%{color: red;}
+    90%{color: orangered;}
+    100%{color: black;}
+}
+
+
+
+.pantalla {
+    height: 6rem;
+    grid-column: 1 / -1;
+    background-color:#05204A;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align: right;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    font-family: monospace;
+    font-weight: 600;
+}
+
+.btn {
+    background-color: #05204A;;
+    color: white;
+    border: 0;
+    padding: 1.5rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color:#6694e0;
+    color: #d19198;
+    transition: .1s;
+    position: sticky;}
+
+#cero {
+    grid-column: span 2;
+}
+
+#igual {
+    grid-row: span 2;
+    background-color: #e6394a;
+}
+
+#igual:hover {
+    background-color: #e65766;
+}
